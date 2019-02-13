@@ -1,0 +1,23 @@
+
+public class Cerc extends Figura {
+	private double raza;
+	
+	public Cerc(){
+		this.raza = 0;
+	}
+	
+	public Cerc(double raza){
+		this.raza = raza;
+	}
+	
+	public double perimetru(){
+		return 2 * Math.PI * raza;
+		
+	}
+	
+	public double arie(){
+		return Math.PI * raza * raza;
+		
+	}
+
+}
