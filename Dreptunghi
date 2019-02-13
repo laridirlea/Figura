@@ -1,0 +1,29 @@
+
+public class Dreptunghi extends Figura {
+	public double lungime;
+	public double latime;
+	
+	public Dreptunghi(){
+		this.lungime = 0;
+		this.latime = 0;
+	}
+	
+	public Dreptunghi(int lungime,int latime){
+		this.lungime = lungime;
+		this.latime = latime;
+	}
+	
+	public double arie(){
+		return lungime * latime;
+	}
+	
+	public double getLatura(){
+		return this.lungime;
+	}
+	
+	public double perimetru(){
+		return 2 * (lungime*latime);
+	}
+
+	
+}
