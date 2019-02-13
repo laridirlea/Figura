@@ -1,0 +1,52 @@
+import java.awt.print.Printable;
+import java.util.Random;
+
+
+public class test {
+
+	public static void main(String[] args) {
+		Patrat p1 = new Patrat(5);
+		
+		
+		Cerc c1 = new Cerc(54);
+		
+		Figura[] c_array = new Figura[3];
+		c_array[0] = new Cerc(3);
+		c_array[1] = new Patrat(5);
+		c_array[2] = new Patrat(10);
+		
+		for (int i=0;i<c_array.length;i++)
+			if (c_array[i] instanceof Cerc){
+				System.out.println(c_array[i].arie());
+			}
+		
+		Figura[] array = new Figura[3];
+		array[0] = new Cerc(3);
+		array[1] = new Patrat(5);
+		array[2] = new Dreptunghi(7,4);
+		
+		for(int i=0;i<array.length;i++){
+			if ((array[i] instanceof Patrat)){
+				System.out.println("Patrat: "+((Patrat)array[i]).getLatura());
+			}
+			
+			if (array[i] instanceof Dreptunghi){
+				System.out.println("Dreptunghi: "+((Dreptunghi)array[i]).getLatura());
+
+				
+			}
+			
+		}
+		
+		
+		
+		
+		
+	}
+	
+	private static int random(){
+		Random rand = new Random();
+		return rand.nextInt();
+	}
+
+}
