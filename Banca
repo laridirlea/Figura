@@ -1,0 +1,29 @@
+public class Banca {
+	Client[] clienti;
+	String codBanca;
+	
+	Banca(Client[] clienti,String codBanca){
+		this.clienti = clienti;
+		this.codBanca = codBanca;
+	}
+	
+	Banca(){
+		this.clienti = new Client[0];
+		this.codBanca = "Undefined";
+	}
+	
+	public void setCodBanca(String codBanca){
+		this.codBanca = codBanca;
+	}
+	
+	public String getCodBanca(){
+		return this.codBanca;
+	}
+	
+	public Client[] getClienti(){
+		return clienti;
+	}
+	
+	
+	
+}
